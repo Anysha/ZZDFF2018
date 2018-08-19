@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html>
+<title>ZipZapFoodFest</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<!-- fonts-->
+<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Monoton|Pacifico|Josefin+Sans|Raleway|Roboto|Roboto+Condensed" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css">
+<!--bootstrap-->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- old bootstrap-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">    
+  
+  <!-- navbar-->
+    <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-grey w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+        
+       
+<div class="container" id="RobotoCondensed" style="font-size: 20px" >
+     <!--<div class="col-12 col-md-auto" style="margin-left: 1px; margin-right: 1px;">
+      <a href="#home" class="w3-bar-item w3-button"> <img src="images/logo/zzdfoodfestlogosmall.png" style="height: 60px; width: 80px;"></a>
+      </div> -->  
+        
+    <div class="row" id="NavbarPadding" >
+        <div class="col-12 col-md-auto" style="margin:0 px 5 px 0 px 5 px; padding: 0 px;" >
+            <a href="#home"><img src="images/logo/zzdfoodfestlogosmall.png" style="height: 60px; width: 80px;"></a>
+        </div>
+        
+        <div class="col-12 col-md-auto" style="margin: 0px 5px 0px 5px; padding: 0px; ">
+            <a href="#home" class="w3-bar-item w3-button">HOME</a>
+        </div>
+        <div class="col-12 col-md-auto" style="margin: 0px 5px 0px 5px; padding: 0 px; ">
+            <a href="#about" class="w3-bar-item w3-button w3-hide-small">ABOUT</a>
+        </div>
+        <div class="col-12 col-md-auto" style="margin: 0px 5px 0px 5px; padding: 0 px; ">
+            <a href="#gallery" class="w3-bar-item w3-button w3-hide-small">GALLERY</a>
+        </div>
+        <div class="col-12 col-md-auto" style="margin: 0px 5px 0px 5px; padding: 0 px; ">
+            <a href="#eventdetails" class="w3-bar-item w3-button w3-hide-small">EVENT DETAILS</a>
+        </div>
+        <div class="col-12 col-md-auto" style="margin: 0px 5px 0px 5px; padding: 0 px; ">
+            <a href="#partners" class="w3-bar-item w3-button w3-hide-small">PARTNERS</a>
+        </div>
+        <div class="col-12 col-md-auto" style="margin: 0px 5px 0px 5px; padding: 0px;">
+            <a href="#sponsors" class="w3-bar-item w3-button w3-hide-small">SPONSORS</a>
+        </div>
+        <div class="col-12 col-md-auto" style="margin: 0px 5px 0px 5px; padding: 0px;">
+            <a href="#contactus" class="w3-bar-item w3-button w3-hide-small">CONTACT US</a>
+        </div>
+       
+    </div>
+         
+</div> 
+    <!--QUERY SEARCH BUTTON --> 
+      <!--   <div class="col-12 col-md-auto" style="margin: 0px 5px 0px 5px; padding: 0px;">
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+            <i class="fa fa-search"></i>
+            </a>
+        </div> -->
+        
+</div> 
+ 
+    
+     
+<!-- Original Code for Navbar 
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> GALLERY</a>
+     <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i>EVENT DETAILS</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> VEDORS</a>
+       <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> SPONSORS</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+  --->  
+    
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">GALLERY</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">EVENT DETAILS</a>
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">VENDORS</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">SPONSORS</a>
+    <a href="#contactus" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>  
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity" >ZipZapDeals <span class="w3-hide-small">Food </span> Fest</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+      <div style="background-color: #303030;"><h3 class="w3-center" id="RobotoCondensed" style="color: ghostwhite;"> ABOUT</h3> 
+      </div>
+            
+        <hr style="height:1px;border:none;color:#777;background-color:#777" />
+  <!--<p class="w3-center" id="Pacifico"><em>ZipZapDeals Food Fest</em></p> -->
+    <br>
+  <p id="Raleway" style="text-align: justify; line-height: 1.6;">The ZIPZAPDEALS FOOD FEST is the biggest and most vibrant food festival in Delhi NCR. Since our inception we have engaged an estimated 1,50,000 patrons, with over 250 exhibitors offering an unforgettable culinary experience of indulging in an array of handpicked cuisines, entertainment and pop-up restaurants. With a new concept every show The ZIPZAPDEALS FOOD FEST is a foodie’s paradise not to be missed over the weekend.</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <!--<p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p>--><br>
+      <img src="/images/logo/zzdlogo.jpg" class="w3-round w3-image w3-hover-opacity" style="height:350px ;" alt="ZipZapDeals Logo" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      
+        <p id="Raleway" style="text-align: justify; line-height: 1.6;">
+        ZipZapDeals Internet Private Limited is a student centric platform which empowers students & brands.
+
+        Established in 2016, ZipZapDeals Internet Private Limited is India’s first and only college student-centric online platform that facilitates a GPS like tool to navigate their lifestyle requirement and needs. This innovative platform brings vendors (small vendors & merchant establishments) and big brands under common platform providing discovery of exclusive deals for the students.  Zipzap facilitates real time updates on deals and offers, DIY for Vendors, daily statistic and more.
+        </p>
+        <!-- hover text-->
+    </div>
+    
+  </div>
+  <!--<p class="w3-large w3-center w3-padding-16">Im really good at:</p>
+  <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+  </div> -->
+</div>
+
+    <!-- Information bar -->
+<div class="w3-row w3-center w3-padding" style="background-color: #303030">  <!-- w3-dark-grey -->
+  <span class="w3-quarter w3-section">
+    <span class="w3-large" style="height:100%; width: 100%; overflow: hidden; text-align: center;">
+         <div class="svg-wrapper">
+            <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+                <rect class="shape" height="60" width="320" />
+            </svg>
+        <div class="text">4+ Cities</div>
+        </div> 
+        </span><br>
+  </span>
+    
+  <span class="w3-quarter w3-section">
+    <span class="w3-large">
+     <div class="svg-wrapper" >
+            <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+                <rect class="shape" height="60" width="320" />
+            </svg>
+        <div class="text">5+ Categories</div>
+       </div> 
+      </span><br>
+  </span>
+    
+  <span class="w3-quarter w3-section">
+    <span class="w3-large" style="height:100%; width: 100%; overflow: hidden; text-align: center;">
+         <div class="svg-wrapper">
+            <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+                <rect class="shape" height="60" width="320" />
+            </svg>
+        <div class="text">1000+ Merchants</div>
+        </div>
+        </span><br>
+  </span>
+    
+    
+  <span class="w3-quarter w3-section">
+    <span class="w3-large">
+      <div class="svg-wrapper">
+        <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+            <rect class="shape" height="60" width="320" />
+        </svg>
+        <div class="text">100% Satisfaction</div>
+      </div>
+      </span><br>
+      
+  </span> 
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container ">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide"></span>
+  </div>
+</div>
+
+<!-- Container (GALLERY Section) -->
+<div class="w3-content w3-container w3-padding-64" id="gallery">
+  <div style="background-color: #303030; color: ghostwhite"><h3 class="w3-center" id="RobotoCondensed" style="color: ghostwhite">GALLERY</h3></div>
+    <hr>
+  <p class="w3-center"><em>Here are some of our latest images.<br> Click on the images to make them bigger</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+    <!-- Frist row-->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="images/onlineimages/honeycomb%20waffles%20on%20stick.jpg" style="width:100%; height: 150px;" onclick="onClick(this)" class="w3-hover-opacity" alt="Honey Comb Waffles">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="images/onlineimages/groupfie.jpg" style="width:100%; height: 150px;" onclick="onClick(this)" class="w3-hover-opacity" alt="Chocolate icecream topped with crunch almonds">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/images/onlineimages/th%20(1).jpg" style="width:100%; height: 150px" onclick="onClick(this)" class="w3-hover-opacity" alt="Cheese and Fries">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/images/onlineimages/posing%20with%20besties.jpg" style="width:100%; height: 150px;" onclick="onClick(this)" class="w3-hover-opacity" alt="Grilled Sandwhich">
+    </div>
+  </div>
+<!-- Gallery Second row-->
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+     <img src="images/onlineimages/Chandigarh%20Ice%20Cream%20Fest%202017.JPG" style="width:100%; height: 155px" onclick="onClick(this)" class="w3-hover-opacity" alt="Canopies">
+    </div>
+
+    <div class="w3-col m3">
+        <img src="/images/onlineimages/waffleicecream.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Posing with besties">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/images/onlineimages/fat%20lulu's.jpg" style="width:100%; height: 155px" onclick="onClick(this)" class="w3-hover-opacity" alt="Spicy bhel chat">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/images/onlineimages/milkshake1.jpg" style="width:100%; height: 150px" onclick="onClick(this)" class="w3-hover-opacity" alt="Good Times">
+    </div>
+  </div>  
+
+   <!-- Gallery: Third row-->
+    <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="images/onlineimages/woodboxpizzajareedit.jpg" style="width:100%; height: 145px;" onclick="onClick(this)" class="w3-hover-opacity" alt="Cheezy Nachos">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="images/onlineimages/darji.jpg" style="width:100%; height: 145px" onclick="onClick(this)" class="w3-hover-opacity" alt="Family fun time!">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/images/onlineimages/canopies%20night.jpg" style="width:100%; height: 145px;" onclick="onClick(this)" class="w3-hover-opacity" alt="Indo-Chinese">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/images/onlineimages/chinese%20lanterns.jpg" style="width:100%; height: 145px;" onclick="onClick(this)" class="w3-hover-opacity" alt="Grilled Sandwhich">
+    </div>
+        <!--<div><button class="w3-button w3-padding-large w3-light-grey w3-center" style="margin-top:64px">LOAD MORE</button></div> -->
+  </div>
+    
+</div>
+
+    
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">EVENT DETAILS</span>
+  </div>
+</div>
+
+
+<!-- Container (Event Section) -->
+<div class="w3-content w3-container w3-padding-64" id="eventdetails">
+  <div style ="background-color: #303030;"><h3 class="w3-center" id="RobotoCondensed" style=" color: ghostwhite">WE'RE HERE!</h3>
+    <hr></div>
+  <!--<p class="w3-center"><em>Feel free to contact us.</em></p>-->
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m5 w3-container" style="width: 300px; border: 5px; border-style: solid; border-color: #22373C; border-width: medium; padding-top: 15px; padding-bottom: 15px;">
+      <!-- Add Google Maps HBLOCK-->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.7721326614965!2d77.33220921467806!3d28.54656808245178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5d4ee88d905%3A0x70a87fafb1ffc6b8!2sH+Block+Amity+University!5e0!3m2!1sen!2sin!4v1518713363421" class="w3-round-large w3-greyscale" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+    
+
+        <!--<div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>-->
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+    
+        <p><i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> H Block, Amity University, Noida, UP, India<br></p>
+        <p><i class="fa fa-calendar fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> 26th March 2018 <br></p>
+        <p><i class="fa fa-clock-o fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Noon to 6 PM<br></p>
+        <p><i class="fa fa-inr fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Charges: FREE for Amity Students (NOIDA campus only)<br></p>
+        <p><i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +91 7838181979<br></p>
+        <p><i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: contactus@zipzapdeals.com<br></p>
+
+      </div>
+        
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- video div-->
+<!--
+<div id="parent-container" style="position:relative;">
+          <div id="video-conainer" style="z-index:-1;">
+              <video autoplay loop muted style="width:100%; min-height:400"> 
+              <source id="mp4" src="/videos/Stars%20Night%204K%20Motion%20Background%20(1).mp4" type="video/mp4">
+              <p>your user agent does not support HTML5 video element</p>
+              </video>
+          </div>
+           <div style="height=100%; width=100%; background-color: rgba(0,0,0.8); position:absolute; top=0px;">     
+           </div>
+           <p style="font-size:50px; position:absolute; top:200px;  left:350px; color:#fff;">
+           Vendors/Sponsors </p>
+</div> -->
+    
+    <!-- Fourth Parallax Image with Portfolio Text -->
+<div class="bgimg-7 w3-display-container">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide"></span>
+  </div>
+</div>
+    
+    
+    <!-- Container (Ticket Section) -->
+<div class="w3-content w3-container w3-padding-64" id="eventdetails">
+ <div style="background-color: #303030; color: ghostwhite"><h3 class="w3-center" id="RobotoCondensed" style="color: ghostwhite">TICKETS</h3>
+    <hr></div> 
+  <!--<p class="w3-center"><em>Feel free to contact us.</em></p>-->
+
+  <div class="w3-row w3-padding-32 w3-section">
+    
+    
+      <div class="w3-large w3-margin-bottom w3-center">
+    
+        <p> FOR STUDENTS FROM ALL OTHER COLLEGES<br>
+            For students from all other colleges:<br>
+            Early Bird Prices (Applicable till 2018): INR 100<br>
+            Regular price (Applicable after): INR 200
+          
+          </p>
+
+      </div>
+    
+  </div>
+</div>
+    <!-- Vendor Sponsor Parallax Image with Portfolio Text -->
+    <div class="bgimg-6 w3-display-container">
+    <!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="partners">
+  <h3 class="w3-center" id="RobotoCondensed" style="color: white">PARTNERS</h3>
+    <hr>
+   <br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+    <!-- Frist row-->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="images/logo/baristacoffeelogo.png" style="width:100%" class="w3-hover-opacity" alt="Barista Coffee">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="images/logo/baskinrobins.jpg" style="width:100%" class="w3-hover-opacity" alt="Baskin Robins ">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/images/logo/decathalon.gif" style="width:100%" class="w3-hover-opacity" alt="Decathalon">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/images/logo/pitacos%20white%20copy%20.jpg" style="width:100%; height:215px" class="w3-hover-opacity" alt="Glued">
+    </div>
+  </div>
+<!-- Gallery Second row-->
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+     <img src="images/logo/junk.jpg" style="width:100%;height: 220px;" class="w3-hover-opacity" alt="Junkyard Cafe">
+    </div>
+
+    <div class="w3-col m3">
+        <img src="/images/logo/garamdhram.png" style="width:100%; height: 220px;" class="w3-hover-opacity" alt="Attitude">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/images/logo/theburgerclub.png" style="width:100%; height: 220px;" class="w3-hover-opacity" alt="The Burger Club">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/images/logo/haristo.png" style="width:100%; height: 220px;" class="w3-hover-opacity" alt="Haristo">
+    </div>
+  </div>  
+
+   <!-- Gallery: Third row-->
+    <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="images/logo/warehouse%20cafe.png" style="width:100%" class="w3-hover-opacity" alt="Warehouse cafe">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="images/logo/tpotcafe.jpg" style="width:100%; height:217px;" class="w3-hover-opacity" alt="Giani">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/images/logo/imperfectologowhite.jpg" style="width:100%; height: 218px;" class="w3-hover-opacity" alt="Indo-Chinese">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/images/logo/chicagopizza.png" style="width:100%" class="w3-hover-opacity" alt="Grilled Sandwhich">
+    </div>
+         
+    </div>
+    
+    </div>
+    
+</div>
+    
+    
+
+<!-- Container (Vendor Section) -->
+<div class="w3-content w3-container w3-padding-64" id="partnerinfo">
+  <h3 class="w3-center" id="RobotoCondensed" style="background-color: #303030; color: ghostwhite">PARTNERS</h3>
+    <hr>
+  <!--<p class="w3-center"><em> Fill the form below to get started ! .</em></p>-->
+
+  <div class="w3-row w3-padding-32 w3-section"> 
+    <div class="w3-col m5 w3-container" id="Roboto" style="margin-top: 20px;font-weight: 200; font-size: 18px; line-height: 1.8;">
+      <!-- Add Vendor information-->
+      <p> ZipZapDeals invites you to come and share your finger licking deliciousness with us ! </p>
+      <p>We are preparing the best Food Fest in town and we wouldn’t want to leave you out ! 
+      You’ve got the food and we’ve got a place just for you !</p>
+        
+     <p style="font-weight: bold; line-height: 1.6; text-align:justify;"><br>Registrations close on 20th March.<br> Hurry ! Only 15 seats available !  </p> 
+ 
+     
+   
+    </div>
+    <div class="w3-col m7 w3-panel">
+      <div class="w3-large w3-margin-bottom" style="font-weight: 200; font-size: 18px;">
+        <p><i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Where: H Block Amity University, Noida, UP India<br></p>
+        <p><i class="fa fa-calendar fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Last Day for Submission: 20th March 2018 <br></p>
+        <p><i class="fa fa-clock-o fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Event Date: 30th March 2018 <br></p>
+        <p><i class="fa fa-inr fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Canopy Charges: INR 10,000<br></p>
+        <p><i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +91 7838181979<br></p>  
+        <p><i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: contactus@zipzapdeals.com<br></p>
+      </div>
+    </div>
+  </div>
+    
+    <div>
+      <img src="/images/logo/H%20block%20blue%20print%20other.jpg" style="align-content: center; width: 100%;">
+    </div>
+    
+     <div>
+      <img src="/images/logo/stalls.jpg" style="align-content: center; width: 100%;">
+    </div>
+</div>
+
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">SPONSORS</span>
+  </div>
+</div>
+    
+<!-- Container (Sponsor section)-->
+<div class="w3-content w3-container w3-padding-64" id="sponsors">
+  <h3 class="w3-center" id="RobotoCondensed" style="background-color: #202020; color: ghostwhite;">SPONSORS</h3>
+    <hr>  
+   <!-- <p class="w3-center"><em>Feel free to contact us.</em></p>-->
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m5 w3-container" style="margin-top: 15px;" >
+      <!-- Add Sponsor information-->
+        <div class="w3-col m8 w3-container">
+        
+        <p id="Roboto" style="font-weight: 100; font-size: 18px; line-height: 1.8;">
+            TITLE SPONSOR : <br>     
+            POWERED BY :    <br>     
+            CO – SPONSORED BY :   <br>
+            ASSOCIATE SPONSORS :  <br>
+            OFFICIAL PARTNERS :  <br>
+            OTHER PARTNERSHIPS : <br>
+            </p>
+        </div>
+      
+        <div class="w3-col m4 w3-container" >
+            <p id="Roboto" style="font-weight: 100; font-size: 18px; line-height: 1.8; ">
+            15 LAKHS     <br>
+            10 LAKHS     <br>
+            7.5 LAKHS    <br>
+            5 LAKHS      <br>
+            2.5 LAKHS    <br>
+            1.5 LAKHS    <br>
+            </p>
+        </div>
+    </div>
+    <div class="w3-col m6 w3-panel" style="width=300px; font-weight: 200; font-size: 18px; line-height: 1.6;" id="Roboto">
+      <div class="w3-large w3-margin-bottom" style="margin-top: 0px;">
+           <p><i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right" ></i>Where: H Block Amity University, Noida, UP, India<br></p>
+            <p><i class="fa fa-calendar fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Last Day for Submission: 20th March 2018 <br></p>
+            <p><i class="fa fa-clock-o fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Event Date: 26th March 2018 <br></p>
+            <p><i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +91 7838181979<br></p>
+          <p><i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: contactus@zipzapdeals.com<br></p>
+    
+        <!--<i class="fa fa-inr fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Canopy Charges: INR 7,500<br>-->
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+
+<!-- Fifth Parallax Image with Portfolio Text -->
+
+    <div class="bgimg-3 w3-display-container">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div> 
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contactus">
+  <h3 class="w3-center" id="RobotoCondensed" style="background-color: #303030; color: ghostwhite">CONTACT US</h3>
+    <hr>
+  <!--<p class="w3-center"><em>Feel free to contact us.</em></p>-->
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m5 w3-container" style="width: 300px">
+      <!-- Add Google Maps IFRAMEEBLOCK-->
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112156.15401096249!2d77.2629727327477!3d28.543332030729132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5d54fc9cead%3A0x238f781532884546!2sZipzapdeals!5e0!3m2!1sen!2sin!4v1517906890977"  class="w3-round-large w3-greyscale" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <!--<div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>-->
+    </div>
+    <div class="w3-col m7 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> E3, 1st floor, Amity Innovation Incubator, Sector 125,    <p style ="text-indent: 3em">Noida, Uttar Pradesh, India - 201313<br></p>
+        <p><i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +91 7838181979 <br></p>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: contact@zipzapdeals.com<br>
+      </div>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-hover-opacity-off whitelink" id="footerimage">
+  <a href="#home" class="w3-button w3-light-grey" target="_blank"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+   <a href="https://www.facebook.com/Zipzapdeals/" target="_blank"> <i class="fa fa-facebook-official w3-hover-opacity" style="color: white;"></i></a>
+    <a href="https://www.instagram.com/zipzapdeals/" target="_blank"><i class="fa fa-instagram w3-hover-opacity" style="color: white;"></i></a>
+      <a href="https://twitter.com/Zipzapdeals0" target="_blank"><i class="fa fa-twitter w3-hover-opacity" style="color: white;"></i></a>
+      <a href="https://www.linkedin.com/company/zipzapdeals/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity" style="color: white;"></i></a>
+  </div>
+  <p>Powered by <a href="https://www.linkedin.com/in/anyshajain/" title="ANYSHA JAIN" target="_blank" class="w3-hover-text-green">ANYSHA JAIN</a></p>
+</footer>
+ 
+<!-- Add Google Maps -->
+<script type="text/javascript">
+
+function myMap()
+{
+  myCenter=new google.maps.LatLng(28.628454, 77.376945);//HBLOCK
+  var mapOptions= {
+    center:myCenter,  
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+</script>
+   
+   
+<script>
+    
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBINamcvd0afnZC0BDNQZIcF0QoxArVSXI&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>

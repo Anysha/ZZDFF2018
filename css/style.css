@@ -1,0 +1,207 @@
+html,body
+{
+    height:100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}*/
+#Pacifico{
+    font-family: 'Pacifico', cursive;
+    font-size: 38px;
+    color: #404040;
+}
+
+#Monoton{
+    font-family: 'Monoton', cursive;
+    font-size: 42px;
+}
+
+#JosefinSans
+{font-family: 'Josefin Sans', sans-serif;
+ font-size: 18px;
+}
+
+#Fresca
+{
+    font-family: 'Fresca', sans-serif;
+    font-size: 16px;
+}
+
+#Raleway
+{
+    font-family: 'Raleway', cursive;
+    font-size: 18px;
+}
+
+#Roboto
+{
+    font-family: 'Roboto', cursive;
+    font-size: 20px;
+}
+
+
+#RobotoCondensed
+{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 60px;
+}
+
+#myNavbar{
+    color: white;
+}
+
+#NavbarPadding {
+  padding-top: 15px;
+  padding-bottom: 10px; 
+  margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
+
+body, html {
+    height: 100%;
+    color: #404040;
+    line-height: 1.8;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+
+/*Responsive map*/
+.responsiveMap{
+    width: 100%;
+    height: 0;
+    position: relative;
+}
+.responsiveMap iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#home{
+    background-color: red;
+}
+.grad1 {
+    background-color: red;
+}
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 , .bgimg-6, .bgimg-7{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image:linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.2)), url("../images/RoyaltyFree/yannis-papanastasopoulos-327476-unsplash.jpg");
+    min-height: 100%;
+    background-color: red;
+}
+
+/* Second image (Gallery) */
+.bgimg-2 {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)), url("../images/RoyaltyFree/natalya-340213-unsplash.jpg");
+    min-height: 400px;
+}
+
+
+/* Third image (Event Details) */
+.bgimg-3 {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../images/RoyaltyFree/pablo-heimplatz-243307-unsplash.jpg");
+    min-height: 400px;
+}
+
+/* Fourth image (Parallax form) */
+.bgimg-4 {
+    background-image: url("../images/RoyaltyFree/bluewood.jpg");
+    min-height: 400px;
+}
+
+/* Contact image */
+/*.bgimg-5 {
+    background-image: url("../images/RoyaltyFree/scrolls.jpg");
+    min-height: 400px;
+}*/
+
+/* Vendor Sposnor image */
+.bgimg-6 {
+    background-image:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../images/RoyaltyFree/marcelo-quinan-37438.jpg");
+    min-height: 600px;
+}
+
+.bgimg-7 {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../images/RoyaltyFree/tickets.jpg");
+    min-height: 400px;
+}
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+
+/*make outline box on hover in grey info bar*/
+
+.svg-wrapper {
+  height: 20px;
+	margin: auto auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 320px;
+}
+
+.shape {
+  fill: transparent;
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 8px;
+  stroke: #19f6e8;
+}
+
+.text {
+  color: #fff;
+  font-family: 'Roboto Condensed';
+  font-size: 16px;
+  //letter-spacing: 8px;
+  line-height: 32px;
+  position: relative;
+  top: -48px;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+  }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 2px;
+  }
+}
+
+.svg-wrapper:hover .shape {
+  -webkit-animation: 0.6s draw linear forwards;
+  animation: 0.6s draw linear forwards;
+}
+
+/*Footerimage*/
+#footerimage
+{
+    background-image: url("../images/RoyaltyFree/pexels-photo-517884.jpeg") ;
+}
+ 
+
+
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
